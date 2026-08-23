@@ -40,8 +40,8 @@ export default function Login() {
 
     if (
       role === "admin" &&
-      mobile === "9966334455" &&
-      password === "234567"
+      mobile === process.env.ADMIN_NUMBER &&
+      password === process.env.ADMIN_PASS
     ) {
       setLoading(true);
 
